@@ -11,17 +11,17 @@ export function CTA() {
       <Container>
         <div className="flex flex-col items-center gap-6 rounded-2xl border border-border bg-card p-8 text-center shadow-sm md:p-12">
           <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
-            Começa a praticar combate medieval
+            Junta-te à APCOM
           </h2>
           <p className="max-w-xl text-sm text-muted-foreground md:text-base">
-            Encontra um clube filiado perto de ti e contacta-os diretamente
-            para marcar o teu primeiro treino.
+            Faz parte da comunidade nacional do combate medieval. Acede a
+            eventos federados, formações e à seleção nacional.
           </p>
           <Link
-            href="/clubes"
+            href="/associa-te"
             className={cn(buttonVariants({ size: "lg" }), "gap-2")}
           >
-            Ver clubes
+            Associa-te
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </div>

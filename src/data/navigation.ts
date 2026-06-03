@@ -9,4 +9,5 @@ export const mainNav: NavItem[] = [
   { label: "Desporto", href: "/desporto" },
   { label: "Associação", href: "/associacao" },
   { label: "Contactos", href: "/contactos" },
+  { label: "Associa-te", href: "/associa-te" },
 ];
