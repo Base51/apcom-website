@@ -35,10 +35,10 @@ export function Hero() {
           </p>
           <div className="mt-2 flex flex-wrap items-center gap-3">
             <Link
-              href="/associa-te"
+              href="/clubes"
               className={cn(buttonVariants({ size: "lg" }), "gap-2")}
             >
-              Associa-te
+              Encontra um clube
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Link>
             <Link
