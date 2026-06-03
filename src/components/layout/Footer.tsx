@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/shared/Container";
+import { Logo } from "@/components/shared/Logo";
 import { mainNav } from "@/data/navigation";
 import { SITE } from "@/lib/constants";
 
@@ -7,10 +8,8 @@ export function Footer() {
   return (
     <footer className="mt-auto border-t border-border py-12">
       <Container className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
-        <div className="flex flex-col gap-2">
-          <span className="text-base font-semibold tracking-tight">
-            {SITE.name}
-          </span>
+        <div className="flex flex-col gap-3">
+          <Logo height={40} />
           <p className="max-w-sm text-sm text-muted-foreground">
             {SITE.fullName}
           </p>

@@ -14,6 +14,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { ThemeToggle } from "@/components/shared/ThemeToggle";
+import { Logo } from "@/components/shared/Logo";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -23,10 +24,10 @@ export function Header() {
       <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-6 md:px-8 lg:px-12">
         <Link
           href="/"
-          className="text-base font-semibold tracking-tight transition-colors duration-200 hover:text-foreground"
+          className="flex items-center transition-opacity duration-200 hover:opacity-80"
           aria-label={SITE.fullName}
         >
-          {SITE.name}
+          <Logo priority height={36} />
         </Link>
 
         <nav
@@ -61,7 +62,9 @@ export function Header() {
             />
             <SheetContent side="right" className="w-72">
               <SheetHeader>
-                <SheetTitle>{SITE.name}</SheetTitle>
+                <SheetTitle className="flex items-center">
+                  <Logo height={28} />
+                </SheetTitle>
               </SheetHeader>
               <nav
                 className="mt-6 flex flex-col gap-1 px-4"
