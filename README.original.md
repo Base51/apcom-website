@@ -1,2 +1,0 @@
-# apcom-website
-APCOM project
