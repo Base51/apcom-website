@@ -3,11 +3,16 @@ import { Calendar } from "lucide-react";
 import { Container } from "@/components/shared/Container";
 import { Section } from "@/components/shared/Section";
 import { PageHeader } from "@/components/shared/PageHeader";
+import { EventCard } from "@/components/cards/EventCard";
 import { buttonVariants } from "@/components/ui/button";
 import { events } from "@/data/events";
 
 export function Events() {
-  const upcoming = events.slice(0, 3);
+  const today = new Date().toISOString().split("T")[0];
+  const upcoming = events
+    .filter((e) => e.startDate >= today)
+    .sort((a, b) => a.startDate.localeCompare(b.startDate))
+    .slice(0, 3);
 
   return (
     <Section className="bg-muted/30">
@@ -39,7 +44,9 @@ export function Events() {
           </div>
         ) : (
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {/* TODO: EventCard component */}
+            {upcoming.map((event) => (
+              <EventCard key={event.id} event={event} />
+            ))}
           </div>
         )}
       </Container>

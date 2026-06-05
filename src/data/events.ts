@@ -1,3 +1,58 @@
 import type { Event } from "@/types/event";
 
-export const events: Event[] = [];
+export const events: Event[] = [
+  {
+    id: "1",
+    title: "Torneio em Dois Portos",
+    category: "torneio",
+    startDate: "2025-06-20",
+    location: "Dois Portos",
+    organizer: "Serra Red Lion",
+  },
+  {
+    id: "2",
+    title: "Torneio de Primavera — Legio Christi",
+    description: "Torneio de combate individual organizado pelo clube Legio Christi.",
+    category: "torneio",
+    startDate: "2025-05-24",
+    location: "Porto",
+    organizer: "Legio Christi",
+  },
+  {
+    id: "3",
+    title: "Workshop de Espadachins",
+    description: "Introdução às técnicas de espada medieval com instrutores certificados.",
+    category: "workshop",
+    startDate: "2025-07-05",
+    location: "Coimbra",
+    organizer: "APCOM",
+  },
+  {
+    id: "4",
+    title: "Treino Aberto — Guerreiros do Sul",
+    description: "Sessão de treino aberta a praticantes de todos os níveis.",
+    category: "treino",
+    startDate: "2025-06-21",
+    location: "Faro",
+    organizer: "Guerreiros do Sul",
+  },
+  {
+    id: "5",
+    title: "Encontro Nacional de Clubes",
+    description: "Reunião anual dos clubes filiados APCOM para partilha e networking.",
+    category: "encontro",
+    startDate: "2025-10-18",
+    endDate: "2025-10-19",
+    location: "Braga",
+    organizer: "APCOM",
+  },
+  {
+    id: "6",
+    title: "Torneio de Verão — Ordo Draconis",
+    description: "Combates 1v1 e 3v3 em ambiente descontraído.",
+    category: "torneio",
+    startDate: "2025-08-09",
+    location: "Setúbal",
+    organizer: "Ordo Draconis",
+  },
+];
